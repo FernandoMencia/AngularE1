@@ -1,0 +1,6 @@
+<input type = "text" [(ngModel)] = "element">
+<button (click) = "addElement()">Añadir</button>
+<p *ngFor = "let e of list">
+    {{e}}
+    <button (click) = "removeElement(e)">Eliminar</button>
+</p>
